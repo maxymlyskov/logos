@@ -21,7 +21,7 @@ const LogInSchema = Yup.object().shape({
 const LogIn: React.FC<{}> = () => {
   const initialValues: MyFormValues = { email: "", password: "" };
   return (
-    <div className="centered">
+    <div className="centered form--login">
       <div className="">
         <h3>Log In</h3>
       </div>
@@ -35,7 +35,7 @@ const LogIn: React.FC<{}> = () => {
       >
         {({ errors, touched }) => (
           <Form>
-            <div className="centered form--box">
+            <div className="centered form--box ">
               <div className="form--container">
                 <label htmlFor="email" className="form__label">
                   Email address

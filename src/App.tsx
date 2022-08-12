@@ -1,10 +1,11 @@
-import Welcome from "./components/Welcome";
-import LogIn from "./components/LogIn";
+import Register from "./components/Register";
+import NavigationBarStart from "./components/NavigationBarStart";
 
 function App() {
   return (
     <main>
-      <LogIn />
+      <NavigationBarStart />
+      <Register />
     </main>
   );
 }
