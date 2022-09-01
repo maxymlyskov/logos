@@ -1,11 +1,13 @@
-import Register from "./components/Register";
 import NavigationBarStart from "./components/NavigationBarStart";
+import Starter from "./components/Starter";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <main>
       <NavigationBarStart />
-      <Register />
+      <Starter />
+      <Footer />
     </main>
   );
 }

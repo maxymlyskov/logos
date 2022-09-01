@@ -551,3 +551,105 @@ a {
     margin-top: 8rem;
   }
 }
+/* Forgot Password */
+
+.forgot-password {
+  margin: 4rem 2rem;
+}
+.forgot-password p {
+  color: rgb(172, 172, 172);
+  margin-top: 2rem;
+}
+.forgot-password__form > .btn {
+  background: var(--color-border);
+  border-radius: 1rem;
+  transition: all 0.2s;
+}
+.forgot-password__form > .btn:hover {
+  background: rgb(162, 162, 167);
+}
+
+@media screen and (min-width: 768px) {
+  .forgot-password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .forgot-password p {
+    width: 50rem;
+  }
+  .forgot-password h3 {
+    text-align: left;
+    margin-right: 25rem;
+    margin-bottom: 3rem;
+  }
+}
+/* Footer */
+
+.footer {
+  width: 100%;
+  margin-top: 15rem;
+  padding: 2rem;
+  background: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .website-title {
+  border-bottom: 4px solid var(--color-body);
+}
+.footer p {
+  margin-bottom: 0.3rem;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.footer__centered p {
+  text-align: center;
+  color: var(--color-accent);
+}
+.footer__centered {
+  margin: 0 1rem;
+}
+.author {
+  font-family: Basis, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: all 0.4s;
+}
+.line {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__centered p {
+    font-size: 1.8rem;
+  }
+  .footer__centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .line {
+    display: block;
+  }
+  .footer__centered .line {
+    margin: 0 1rem;
+    height: 3rem;
+  }
+  .author:hover {
+    text-decoration: none;
+    color: var(--color-body);
+    margin: 0 1rem;
+  }
+}

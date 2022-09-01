@@ -3,7 +3,7 @@ import { Formik, Form, Field } from "formik";
 import Button from "./common/Button";
 import * as Yup from "yup";
 
-interface MyFormValues {
+interface LogInFormValues {
   email: string;
   password: string;
 }
@@ -19,7 +19,7 @@ const LogInSchema = Yup.object().shape({
 });
 
 const LogIn: React.FC<{}> = () => {
-  const initialValues: MyFormValues = { email: "", password: "" };
+  const initialValues: LogInFormValues = { email: "", password: "" };
   return (
     <div className="centered form--login">
       <div className="">
