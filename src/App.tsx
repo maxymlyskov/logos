@@ -1,13 +1,9 @@
-import NavigationBarStart from "./components/NavigationBarStart";
-import Starter from "./components/Starter";
-import Footer from "./components/Footer";
+import Card from "./components/common/Card";
 
 function App() {
   return (
     <main>
-      <NavigationBarStart />
-      <Starter />
-      <Footer />
+      <Card />
     </main>
   );
 }
