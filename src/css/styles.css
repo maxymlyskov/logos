@@ -671,6 +671,8 @@ a {
 }
 .card--description {
   font-size: 2.5rem;
+}
+.text-limit {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -711,5 +713,84 @@ a {
   .card--location {
     text-align: center;
     cursor: pointer;
+  }
+}
+/* Details */
+
+.card--details {
+  background: white;
+  margin: 0;
+}
+
+.details--block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-body);
+  height: 40rem;
+  flex-direction: column;
+}
+.with-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.with-icon h3 {
+  margin-bottom: 3.5rem;
+  margin-left: 1rem;
+}
+.details--account h3 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+}
+.details--account {
+  margin-top: -8rem;
+}
+.details--line {
+  height: 2px;
+  width: 100%;
+  background: var(--color-primary);
+  margin-bottom: 3rem;
+  margin-top: -2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card--details-block {
+    margin: 5rem 3rem;
+  }
+  .card--grid {
+    grid-template-columns: none;
+  }
+  .card--image {
+    margin: 0 3rem;
+    margin-bottom: 4rem;
+  }
+  .card--image img {
+    height: 35rem;
+  }
+  .card--title {
+    font-size: 3rem;
+  }
+  .card--description {
+    font-size: 2rem;
+  }
+  .card--price {
+    font-size: 3rem;
+  }
+  .card--location {
+    font-size: 2rem;
+  }
+  .details--block {
+    margin: 0 5rem;
+    height: 35rem;
+    padding-top: 2rem;
+  }
+  .details--account h3 {
+    font-size: 3rem;
+  }
+  .with-icon h3 {
+    font-size: 3rem;
   }
 }
