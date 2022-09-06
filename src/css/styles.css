@@ -273,6 +273,9 @@ a {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /* Starter */
 
@@ -660,7 +663,7 @@ a {
   background: var(--color-accent);
 }
 
-.card--image img {
+.card--image-common img {
   width: 100%;
   height: 30rem;
   object-fit: cover;
@@ -699,11 +702,11 @@ a {
   margin-left: 3rem;
 }
 @media screen and (min-width: 768px) {
-  .card--grid {
+  .card--grid-common {
     grid-template-columns: 30rem 1fr;
   }
 
-  .card--image {
+  .card--image-common {
     height: 30rem;
   }
   .card__info {
@@ -792,5 +795,38 @@ a {
   }
   .with-icon h3 {
     font-size: 3rem;
+  }
+}
+/* Account */
+.account--filter {
+  margin: 2rem 0;
+}
+.filter__block {
+  text-align: center;
+  padding: 1rem;
+  background: var(--color-border);
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.filter__block:hover {
+  color: var(--color-secondary);
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .account--filter {
+    margin: 3rem 2rem;
+  }
+  .filter__block {
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    margin: 0 1px;
+  }
+  .filter__block:hover,
+  .filter__block:active {
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
   }
 }

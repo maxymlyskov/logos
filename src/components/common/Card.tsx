@@ -13,8 +13,8 @@ interface CardProps {
 function Card({ imageTitle, title, description, price, location }: CardProps) {
   const [like, setLike] = useState(false);
   return (
-    <div className="container card grid card--grid">
-      <div className="card--image">
+    <div className="container card grid card--grid-common">
+      <div className="card--image-common">
         <img src={require(`../../images/${imageTitle}.jpg`)} alt={imageTitle} />
       </div>
       <div className="card__info">
